@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:startup_namer/theme.dart';
 import 'package:startup_namer/random_words.dart';
 
 void main() {
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Welcome to Flutter',
-      home: RandomWords(),
+      theme: theme(),
+      home: const RandomWords(),
     );
   }
 }
