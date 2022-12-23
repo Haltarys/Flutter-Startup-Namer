@@ -17,7 +17,10 @@ class SavedSuggestionsRoute extends MaterialPageRoute<void> {
             );
 
             final List<Widget> divided = tiles.isNotEmpty
-                ? ListTile.divideTiles(tiles: tiles, context: context).toList()
+                ? ListTile.divideTiles(
+                    tiles: tiles,
+                    context: context,
+                  ).toList()
                 : [];
 
             return Scaffold(
