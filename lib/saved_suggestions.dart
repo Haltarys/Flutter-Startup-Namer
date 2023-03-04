@@ -11,7 +11,9 @@ class SavedSuggestionsRoute extends MaterialPageRoute<void> {
               (pair) => ListTile(
                 title: Text(
                   pair.asPascalCase,
-                  style: const TextStyle(fontSize: 18),
+                  style: const TextStyle(
+                    fontSize: 18,
+                  ),
                 ),
               ),
             );

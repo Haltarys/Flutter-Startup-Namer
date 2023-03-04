@@ -12,7 +12,9 @@ class RandomWords extends StatefulWidget {
 class _RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
   final _saved = <WordPair>{};
-  final _biggerFont = const TextStyle(fontSize: 18);
+  final _biggerFont = const TextStyle(
+    fontSize: 18,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -64,6 +66,10 @@ class _RandomWordsState extends State<RandomWords> {
   }
 
   void _pushSaved() {
-    Navigator.of(context).push(SavedSuggestionsRoute(saved: _saved));
+    Navigator.of(context).push(
+      SavedSuggestionsRoute(
+        saved: _saved,
+      ),
+    );
   }
 }
